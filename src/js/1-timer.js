@@ -26,9 +26,9 @@ const options = {
     if (timeLeft <= 0) {
       sbmBtn.disabled = true;
       iziToast.show({
-        message: "Please choose a date in the future",
+        message: 'Please choose a date in the future',
         color: 'red',
-        position: "topRight",
+        position: 'topRight',
       });
     } else {
       userSelectedDate = selectedDates[0];
@@ -58,7 +58,7 @@ function convertMs(ms) {
 }
 
 function addLeadingZero(value) {
-   return value = String(value).padStart(2, '0');
+  return String(value).padStart(2, '0');
 }
 
 function updateTimerDisplay(value) {
@@ -76,10 +76,11 @@ sbmBtn.addEventListener('click', () => {
       clearInterval(intervalId);
       input.disabled = false;
       iziToast.show({
-        message: "The timer finished",
+        message: 'The timer finished',
         color: 'yellow',
-        position: "topRight",
-    });
+        position: 'topRight',
+      });
+      updateTimerDisplay(result);
       return;
     }
     updateTimerDisplay(result);
@@ -87,8 +88,8 @@ sbmBtn.addEventListener('click', () => {
   input.disabled = true;
   sbmBtn.disabled = true;
   iziToast.show({
-        message: "The timer activated",
-        color: 'green',
-        position: "topRight",
-    });
+    message: 'The timer activated',
+    color: 'green',
+    position: 'topRight',
+  });
 });
