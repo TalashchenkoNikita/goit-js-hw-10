@@ -31,7 +31,17 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient( 
+    rgba(90, 92, 114, 0.47), 
+    rgba(209, 211, 253, 0.47)),
+    url("../img/bg-image.png");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    background-color: #c2c5fabd;
 }
+
 
 main {
   flex-grow: 1;
