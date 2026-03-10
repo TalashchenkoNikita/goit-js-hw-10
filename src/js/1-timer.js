@@ -23,7 +23,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const timeLeft = selectedDates[0] - Date.now();
-    if (timeLeft < 0) {
+    if (timeLeft <= 0) {
       sbmBtn.disabled = true;
       iziToast.show({
         message: "Please choose a date in the future",
