@@ -68,11 +68,19 @@ function updateTimerDisplay(value) {
   secondsValue.textContent = addLeadingZero(value.seconds);
 }
 
+function resetTimerDisplay() {
+  daysValue.textContent = addLeadingZero(0);
+  hoursValue.textContent = addLeadingZero(0);
+  minutesValue.textContent = addLeadingZero(0);
+  secondsValue.textContent = addLeadingZero(0);
+}
+
 sbmBtn.addEventListener('click', () => {
   const intervalId = setInterval(() => {
     const timeLeft = userSelectedDate - Date.now();
     const result = convertMs(timeLeft);
     if (timeLeft <= 0) {
+      resetTimerDisplay();
       clearInterval(intervalId);
       input.disabled = false;
       iziToast.show({
@@ -80,7 +88,6 @@ sbmBtn.addEventListener('click', () => {
         color: 'yellow',
         position: 'topRight',
       });
-      updateTimerDisplay(result);
       return;
     }
     updateTimerDisplay(result);
