@@ -1,5 +1,8 @@
 /* Styles for Mobile devices */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
