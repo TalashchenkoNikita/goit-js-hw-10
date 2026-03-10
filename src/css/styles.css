@@ -126,8 +126,8 @@ button:hover {
 }
 
 .start-page {
-  max-width: 1168px;
-  margin: 0 36px;
+  max-width: 100%;
+  margin: 0 20px;
   align-items: flex-start;
 }
 
