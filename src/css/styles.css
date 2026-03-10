@@ -45,6 +45,7 @@ button {
     align-self: flex-start;
     margin-bottom: 32px;
     border-radius: 8px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;

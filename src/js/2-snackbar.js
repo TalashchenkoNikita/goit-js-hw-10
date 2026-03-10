@@ -34,4 +34,5 @@ form.addEventListener('submit', e => {
         position: 'topRight',
       })
     );
+  form.reset();
 });
