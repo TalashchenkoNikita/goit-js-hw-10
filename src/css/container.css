@@ -5,8 +5,10 @@
   align-items: center;
   min-width: 320px;
   max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+  margin: 10px auto;
+  padding: 36px 16px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {

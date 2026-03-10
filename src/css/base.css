@@ -32,8 +32,8 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient( 
-    rgba(90, 92, 114, 0.47), 
-    rgba(209, 211, 253, 0.47)),
+    rgba(7, 7, 7, 0.249), 
+    rgba(232, 233, 249, 0.397)),
     url("../img/bg-image.png");
     background-size: cover;        
     background-position: center;   
