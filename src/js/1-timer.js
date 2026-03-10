@@ -57,11 +57,15 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
+function addLeadingZero(value) {
+   return value = String(value).padStart(2, '0');
+}
+
 function updateTimerDisplay(value) {
-  daysValue.textContent = String(value.days).padStart(2, '0');
-  hoursValue.textContent = String(value.hours).padStart(2, '0');
-  minutesValue.textContent = String(value.minutes).padStart(2, '0');
-  secondsValue.textContent = String(value.seconds).padStart(2, '0');
+  daysValue.textContent = addLeadingZero(value.days);
+  hoursValue.textContent = addLeadingZero(value.hours);
+  minutesValue.textContent = addLeadingZero(value.minutes);
+  secondsValue.textContent = addLeadingZero(value.seconds);
 }
 
 sbmBtn.addEventListener('click', () => {
